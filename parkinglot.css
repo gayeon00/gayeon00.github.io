@@ -1,13 +1,132 @@
-<<<<<<< HEAD
 *{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1{
+    font-size: 48px;
+}
+
+.intro_bg{
+    background-image:url("parkinglot_pic.jpg");
+    width: 100%;
+    height: 718px;
+    height: 527px;
+}
+
+.header{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    height: 86px;
+}
+
+.searchArea{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background:rgba(0,0,0,0);
+    margin-top: 24px;
+}
+
+.searchArea > form{
+    background : rgba(255, 255, 255, 0.204)
+}
+.searchArea > form > input {
+    border: none;
+    background : rgba(0, 0, 0, 0);
+    width: 240px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.searchArea > form > input::placeholder {
+    color: white;
+}
+
+.searchArea > form > span{
+    width: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: 980px;
+    font-weight: bold;
+}
+
+.nav > li {
+    margin-left: 84px;
+}
+.intro_text{
+    width: 100%;
+    margin: 150px auto 150px auto;
+    text-align: center;
     
-    list-style: none;
-    text-decoration: none;
-    border-collapse: collapse;
-    margin: 0px;
-    padding: 0px;
-    color: black;
-    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.intro_text > h1,
+.intro_text > h4{
+    color: white;
+}
+
+.intro_text > h4{
+    margin-top: 10px;
+}
+
+.search_place{
+    position: relative;
+    top:-66px;
+    display: flex;
+    width: 80%;
+    height: 132px;
+    border-radius: 5px;
+    background: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.search_place > form{
+    margin: 40px auto;
+    height: 60px;
+    width: 800px;
+    background : rgba(0, 0, 0, 0.081);
+    text-align: center;
+}
+
+.search_place > form > input {
+    border: none;
+    background : rgba(0, 0, 0, 0);
+    width: 180px;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.search_place > form > span{
+    width: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.main{
+    width: 100%;
+    background:#f1f2f3e1;
+    margin-top:-132px;
+    text-align: center;
 }
 
 header{
@@ -16,13 +135,13 @@ header{
     text-align:center;
 }
 
-form{
+/* form{
     background: rgb(150, 223, 206);
     padding: 10px;
     display: flex;
     justify-content: flex-end;
     color: white;
-}
+} */
 
 .myimage{
     width: 600px;
@@ -34,6 +153,7 @@ form{
 .maps{
     margin: 0 auto;
     padding-left:50px;
+    padding-top: 80px;
     border: 1px solid black;
 }
 
@@ -57,63 +177,4 @@ aside{
 .parkinglot{
     justify-content: center;
     align-items: center;
-=======
-*{
-    list-style: none;
-    text-decoration: none;
-    border-collapse: collapse;
-    margin: 0px;
-    padding: 0px;
-    color: black;
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
-header{
-    display: block;
-    padding: 50px;
-    text-align:center;
-}
-
-form{
-    background: rgb(150, 223, 206);
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-}
-
-.myimage{
-    width: 600px;
-    height: 500px;
-    margin: 0 auto;
-
-}
-
-.maps{
-    margin: 0 auto;
-    padding-left:50px;
-    border: 1px solid black;
-}
-
-.parkinglot_list>*{
-    display:flex;
-    border: 1px solid black;
-}
-
-aside{
-    background: gray;
-    flex: 3;
-    padding: 30px;
-}
-.parkinglot_name{
-    margin: 10px;
-    text-align:justify;
-}
-.parkinglot_content{
-    padding-left: 140px;
-}
-.parkinglot{
-    justify-content: center;
-    align-items: center;
->>>>>>> 997864a7294f21e49a56569cfac5593880a7b62b
 }
